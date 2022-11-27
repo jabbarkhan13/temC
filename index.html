@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <label><h2>Enter Your temprature</h2></label>
+ <input type="number" id="tp" placeholder="Temprature"><br><br>
+
+ <button type="submit" onclick="clk()" >submit</button>
+
+
+ <script>
+
+ function clk(){
+     
+        var tem=(document.getElementById('tp')).value;
+
+  if (tem<=50 && tem >=40) {
+   document.write ("VERY HOT");
+  } else if (tem<=39 && tem >=30) {
+    document.write ("HOT");
+  } else if (tem<=29 && tem >=20) {
+    document.write ("Not Like HOT but normal");
+  }else if (tem<=19 && tem >=10) {
+    document.write ("Feel like COOL");
+}else if (tem<=9 && tem >=-9) {
+    document.write ("VERY COOL");
+}
+  else {
+    document.write ("sorry not found");
+  }
+     
+ }
+ 
+
+
+
+ </script>
+</body>
+</html>
